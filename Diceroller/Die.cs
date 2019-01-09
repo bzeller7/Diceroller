@@ -14,6 +14,11 @@ namespace Diceroller
     {
         private static Random rand;
 
+        static Die()
+        {
+            rand = new Random();
+        }
+
         /// <summary>
         /// Creates the Die with an initial
         /// random value 1-6
@@ -21,7 +26,7 @@ namespace Diceroller
 
         public  Die()
        {
-            rand = new Random();
+            
             Roll();
         }
         /// <summary>
