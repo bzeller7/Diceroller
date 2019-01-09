@@ -12,6 +12,10 @@ namespace Diceroller
     /// </summary>
     class Die
     {
+        public  Die()
+       {
+            Roll();
+        }
         /// <summary>
         /// Get/Set the face value of the die
         /// </summary>
@@ -20,7 +24,7 @@ namespace Diceroller
 
         ///<summary>
         /// Rolls the dice,
-        /// and sets the value
+        /// and sets the value of the die
         /// </summary>
         
         public void Roll()
