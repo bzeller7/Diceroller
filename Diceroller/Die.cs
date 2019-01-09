@@ -12,8 +12,16 @@ namespace Diceroller
     /// </summary>
     class Die
     {
+        private static Random rand;
+
+        /// <summary>
+        /// Creates the Die with an initial
+        /// random value 1-6
+        /// </summary>
+
         public  Die()
        {
+            rand = new Random();
             Roll();
         }
         /// <summary>
@@ -29,9 +37,8 @@ namespace Diceroller
         
         public void Roll()
         {
-            Random rand = new Random();
             int result = rand.Next(1, 7);
-            this.Value = (byte)result;
+            Value = (byte)result;
         }
     }
 }
